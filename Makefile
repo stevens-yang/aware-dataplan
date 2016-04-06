@@ -19,7 +19,8 @@ for SubDir in $(TARGET_DIRS); do \
 done
 endef
 
-all : @$(call build_obj)
+all : 
+	@$(call build_obj)
 	cp switch/build/aware ./
 clean :
 	find ${MAKEROOT} -name *.o -exec rm -rf {}
