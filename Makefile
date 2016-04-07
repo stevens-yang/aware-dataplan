@@ -1,4 +1,3 @@
-export MAKEROOT := $(shell pwd)
 TARGET_DIRS := dpdk-2.1.0 \
                switch
 
@@ -18,6 +17,7 @@ for SubDir in $(TARGET_DIRS); do \
     fi; \
 done
 endef
+
 
 all : 
 	@$(call build_obj)

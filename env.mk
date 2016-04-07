@@ -1,5 +1,5 @@
+export MAKEROOT := $(shell pwd)
 CC := gcc
-
 
 INCLUDE_DIR := 
 
